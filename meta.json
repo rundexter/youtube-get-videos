@@ -3,24 +3,57 @@
  */
 {
     //Required. Inputs the module expects.
-    "inputs": [
-        //e.g.
-        /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-        */
-    ],
+    "inputs": [{
+        "id": "part",
+        "title":"Part"
+    }, {
+        "id": "chart",
+        "title":"Chart"
+    }, {
+        "id": "id",
+        "title":"ID"
+    }, {
+        "id": "playlistId",
+        "title":"Playlist Id"
+    }, {
+        "id": "myRating",
+        "title":"Rating"
+    }, {
+        "id": "hl",
+        "title":"Language Code"
+    }, {
+        "id": "maxResults",
+        "title":"Max Results"
+    }, {
+        "id": "videoCategoryId",
+        "title":"Category ID"
+    }],
     //Required. Outputs the module emits.
-    "outputs": [
-      //e.g.
-      /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-      */
-    ],
+    "outputs": [{
+       "id": "id",
+       "title":"Playlist Id"
+    }, {
+       "id":"playlist_title",
+       "title":"Playlist Title"
+    }, {
+       "id":"playlist_thumbnail",
+       "title":"Playlist Thumbnail"
+    }, {
+       "id": "video_id",
+       "title": "Video Id"
+    }, {
+       "id": "video_url",
+       "title": "Video URL"
+    }],
+    "providers": [{
+        "name": "google",
+        "scopes": [
+            "https://www.googleapis.com/auth/youtube",
+            "https://www.googleapis.com/auth/youtube.force-ssl",
+            "https://www.googleapis.com/auth/youtube.readonly",
+            "https://www.googleapis.com/auth/youtubepartner"
+        ]
+    }],
+    "icon": "youtube-play",
     "title": "YouTube Get Videos" /* Required.A display name for the module */
 }

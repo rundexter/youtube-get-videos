@@ -1,12 +1,18 @@
 {
-    "name": "youtube-get-videos",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "author": "Alexander",
-    "license": "ISC",
-    "private": true,
-    "dependencies": {
-        "lodash": "^3.9.3"
-    }
+  "name": "youtube-get-videos",
+  "version": "0.0.1",
+  "description": "Returns a list of videos that match the API request parameters",
+  "main": "index.js",
+  "author": "Run Dexter, Inc",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "googleapis": "^2.1.6",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rundexter/youtube-get-videos"
+  }
 }
