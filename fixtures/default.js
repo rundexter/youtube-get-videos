@@ -64,7 +64,8 @@ module.exports = _.merge({
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
                 part: 'id,snippet',
-                playlistId: ['PLykzf464sU986ZSyI9nnWs0gklUB9AGMe', 'PLD7nPL1U-R5poNaQDb9HqN4eJiY1aXF6c']
+                playlistId: ['PLykzf464sU986ZSyI9nnWs0gklUB9AGMe', 'PLD7nPL1U-R5poNaQDb9HqN4eJiY1aXF6c'],
+                filter_age: 96
             }
         }
     }
